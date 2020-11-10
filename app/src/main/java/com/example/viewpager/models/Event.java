@@ -41,7 +41,7 @@ public class Event {
         this.eventImgId = eventImgId;
     }
 
-    public static ArrayList<Event> createContacts() {
+    public static ArrayList<Event> createEvents() {
         String[] titles = {"Block party", "Food event", "Business meeting", "Festival", "Celebration"};
         String[] dates = {"2020/12/29", "2020/10/08", "2020/11/22", "2020/10/18", "2020/11/03"};
         int[] imageIds = {R.drawable.party, R.drawable.food, R.drawable.business_meeting, R.drawable.concert, R.drawable.concert};

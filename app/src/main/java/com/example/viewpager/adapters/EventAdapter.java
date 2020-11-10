@@ -1,8 +1,5 @@
 package com.example.viewpager.adapters;
 
-import android.graphics.Canvas;
-import android.graphics.ColorFilter;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +7,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.viewpager.R;
@@ -30,7 +26,9 @@ public class EventAdapter extends RecyclerView.Adapter<EventViewHolder> {
     @Override
     public EventViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new EventViewHolder(
-                LayoutInflater.from(parent.getContext()).inflate(R.layout.event_layout, parent, false)
+                LayoutInflater.from(parent.getContext()).inflate(R.layout.event_layout,
+                        parent,
+                        false)
         );
     }
 
@@ -47,6 +45,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventViewHolder> {
         return events.size();
     }
 }
+
 class EventViewHolder extends RecyclerView.ViewHolder {
 
     private TextView titleText;
