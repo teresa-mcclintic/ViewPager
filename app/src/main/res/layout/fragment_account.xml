@@ -11,8 +11,9 @@
         android:id="@+id/account_img"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:src="@tools:sample/avatars"
-        android:padding="22dp"/>
+        android:padding="22dp"
+        app:srcCompat="@drawable/account"
+        tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/account_name"

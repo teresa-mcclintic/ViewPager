@@ -5,11 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".EventsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <ListView
-        android:id="@+id/events_list"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/event_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </FrameLayout>
