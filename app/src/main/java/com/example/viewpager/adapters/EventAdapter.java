@@ -13,7 +13,7 @@ import com.example.viewpager.R;
 import com.example.viewpager.models.Event;
 
 import java.util.List;
-
+//extends recycler view
 public class EventAdapter extends RecyclerView.Adapter<EventViewHolder> {
 
     private List<Event> events;
@@ -24,6 +24,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventViewHolder> {
 
     @NonNull
     @Override
+    //view holder exentds view holder
     public EventViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new EventViewHolder(
                 LayoutInflater.from(parent.getContext()).inflate(R.layout.event_layout,
@@ -31,7 +32,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventViewHolder> {
                         false)
         );
     }
-
+//assigns location for data in each event.  event is extracted using the position. holder is view holder
     @Override
     public void onBindViewHolder(@NonNull EventViewHolder holder, int position) {
         Event event = this.events.get(position);

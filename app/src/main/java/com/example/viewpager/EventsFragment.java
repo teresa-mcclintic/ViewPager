@@ -24,7 +24,7 @@ public class EventsFragment extends Fragment {
         RecyclerView rvEvents = view.findViewById(R.id.event_list);
         rvEvents.setLayoutManager(new LinearLayoutManager(getContext()));
         EventAdapter eventAdapter = new EventAdapter(Event.createEvents());
-        rvEvents.setAdapter(eventAdapter);
+        rvEvents.setAdapter(eventAdapter);  //conforms data to view
 
     }
 
